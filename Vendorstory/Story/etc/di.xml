@@ -1,0 +1,5 @@
+<config>
+    <type name="{ObservedType}">
+        <plugin name="Yourname" type="{PluginClassName}" sortOrder="1" disabled="false"/>
+    </type>
+</config>

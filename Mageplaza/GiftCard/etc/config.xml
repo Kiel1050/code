@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <giftcard>
+            <general>
+                <enable_gift_card>1</enable_gift_card>
+                <allow_used_gift_card_at_checkout>1</allow_used_gift_card_at_checkout>
+                <allow_redeem_gift_card>1</allow_redeem_gift_card>
+            </general>
+            <code>
+                <code_length>12</code_length>
+            </code>
+        </giftcard>
+
+        <global>
+            <sales>
+                <quote>
+                    <item>
+                        <product_attributes>
+                            <giftcard_amount/>
+                        </product_attributes>
+                    </item>
+                </quote>
+            </sales>
+        </global>
+    </default>
+
+</config>

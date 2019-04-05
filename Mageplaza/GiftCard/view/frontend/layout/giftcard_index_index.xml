@@ -1,0 +1,9 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <body>
+        <referenceContainer name="content">
+            <block class="Mageplaza\GiftCard\Block\Customer\GiftCard" name="customer.giftcard" template="Mageplaza_GiftCard::mycard.phtml"/>
+            <block class="Mageplaza\GiftCard\Block\Customer\GiftCardHistory" name="customer.giftcard.history" template="Mageplaza_GiftCard::mycardHistory.phtml" cacheable="false"/>
+        </referenceContainer>
+    </body>
+</page>

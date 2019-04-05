@@ -1,0 +1,20 @@
+<div id="info">
+    <legend class="legend"><span>"Gift Card Infomation"</span></legend>
+    <div style="width: 50%; float: left">
+        <b>Balance</b>
+        <p><?=$this->helper('Magento\Framework\Pricing\Helper\Data')->currency($block->getBalance(), true, false); //FIXME ?></p>
+    </div>
+
+    <?php
+    if ($block->isRedeemAllowed()) :
+        ?>
+        <div style="width: 50%; float: left;">
+            <form action="<?php echo $block->getUrl('giftcard/index/redeem') ?>" method="POST">
+                <b>Redeem</b><br>
+                <input style="width: 50%" type="text" name="redeem" id="redeem"
+                       placeholder="Enter gift card code"/>
+                <button type="submit" class="action save primary">Redeem</button>
+            </form>
+        </div>
+    <?php endif; ?>
+</div>
